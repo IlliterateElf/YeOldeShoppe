@@ -1,18 +1,29 @@
+{% load static %}
+
 <header>
-    <div class="Title">
+    <div style="text-align: center"class="Title">
         <h1>Ye Olde Shoppe</h1>
     </div>
 </header>
 <body>
     <div style="width:100%; display: table;">
         <div style="display: table-row; height:100px;">
-            <div style="width: 50%; display: table-cell; background:green;">
+            <div style="width: 25%; display: table-cell; text-align: center;">
+                <img src="{{STATIC_URL}}bread.jpg" alt="Great Value Bread"/>
                 <h2>Bread</h2>
                 <h5>$0.99</h5>
             </div>
-            <div style='display: table-cell; background: blue;'>
+            <div style='width: 25%; display: table-cell; text-align: center;'>
                 <h2>Eggs</h2>
-                <h2>$4.99</h2>
+                <h5>$4.99</h5>
+            </div>
+            <div style='width: 25%; display: table-cell; text-align: center;'>
+                <h2>Bacon</h2>
+                <h5>$9.99</h5>
+            </div>
+            <div style='display: table-cell; text-align: center;'>
+                <h2>Cheese</h2>
+                <h5>$2.99</h5>
             </div>
         </div>
     </div>
