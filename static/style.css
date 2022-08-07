@@ -1,0 +1,30 @@
+.title {
+    text-align: center;
+}
+
+.table {
+    width:100%;
+    display: table;
+}
+
+.tablerow {
+    display: table-row;
+    height:100px;
+}
+
+.tablecell {
+    width: 25%;
+    display: table-cell;
+    text-align: center;
+}
+
+.tableimage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    display: table-cell;
+    text-align: center;
+}
