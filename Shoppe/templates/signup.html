@@ -1,0 +1,22 @@
+{% load static %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="{% static "style.css" %}">
+
+<header>
+    <h1 class='title'>Ye Olde Shoppe</h1>
+</header>
+<body>
+    <form method="POST" action="login">
+        <p>Username</p>
+        <input type="text" name="username"/>
+        <p>Email</p>
+        <input type="text" name="email"/>
+        <p>Password</p>
+        <input type="password" name="password"/><br>
+        <p>Verify password</p>
+        <input type="password" name="password_verify"/><br>
+        <input type="submit"/>
+    </form>
+    <a href="login"><p>I already have an account</p></a>
+</body>
