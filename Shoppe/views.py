@@ -18,3 +18,11 @@ def search(request, pk):
         'query': query
     }
     return render(request, 'search.html', context)
+
+def view_item(request, pk):
+    shop_item = ShopItem.objects.get(serial_number__exact=pk)
+    context = {
+        'shop_item': shop_item,
+        'serial_number': pk
+    }
+    return render(request, 'shop_item.html', context)
