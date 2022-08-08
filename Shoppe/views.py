@@ -3,6 +3,9 @@ from Shoppe.models import ShopItem
 from django.shortcuts import HttpResponse
 
 # Create your views here.
+def rdrct(request):
+    return redirect('index')
+
 def index(request):
     return render(request, 'index.html')
 
