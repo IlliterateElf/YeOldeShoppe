@@ -8,7 +8,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('searching', views.searching, name='searching'),
     path('search+q=<str:pk>', views.search, name='search'),
-    path('i+<str:pk>', views.view_item, name='view_item')
+    path('i+<str:pk>', views.view_item, name='view_item'),
+    path('login', views.login, name='login')
 ]
 
 urlpatterns += staticfiles_urlpatterns()

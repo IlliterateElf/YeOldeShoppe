@@ -26,3 +26,6 @@ def view_item(request, pk):
         'serial_number': pk
     }
     return render(request, 'shop_item.html', context)
+
+def login(request):
+    return render(request, 'login.html')

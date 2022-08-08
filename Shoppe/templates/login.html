@@ -5,15 +5,15 @@
 
 <header>
     <h1 class='title'>Ye Olde Shoppe</h1>
-    <a href="login"><p class='profile'>Login<p></a>
 </header>
 <body>
-    <h3>Welcome to YeOldeShoppe</h3>
-    <h3>Search for your item below</h3>
-    <form method="POST" action="searching">
-        {% csrf_token %}
-        <input type="text" name="textField">
-
-        <button type="submit">Search</button>
+    <form method="POST" action="login">
+        <p>Username or Email</p>
+        <input type="text" name="username_email"/>
+        <p>Password</p>
+        <input type="password" name="password"/><br>
+        <input type="submit"/>
     </form>
+    <p>Don't have an account?</p>
+    <a href="signup"><p>Sign up now!</p></a>
 </body>
