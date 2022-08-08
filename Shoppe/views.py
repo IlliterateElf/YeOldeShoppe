@@ -3,8 +3,10 @@ from Shoppe.models import ShopItem
 
 # Create your views here.
 def index(request):
-    return render(request, 'index.html')
-
-def get_shopp_item(request, pk):
-    shoppe_objects = ShopItem.objects.get(pk=pk)
-    return render(request, "index.html")
+    i = 0
+    shop_objects = ShopItem.objects.all()[:20]
+    length = len(shop_objects)
+    context = {
+        'shop_objects': shop_objects
+    }
+    return render(request, 'index.html', context)
