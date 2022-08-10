@@ -7,6 +7,9 @@
     <a href="index"><h1 class='title'>Ye Olde Shoppe</h1></a>
 </header>
 <body>
+    {% for message in messages %}
+    <h3 style="color: red;">{{message}}</h3>
+    {% endfor %}
     <form method="POST" action="login">
         <p>Username or Email</p>
         <input type="text" name="username_email"/>
